@@ -30,9 +30,9 @@ h1 {
   width: 200px;
   background-color: #333;
   position: fixed;
-  top: 195px;  /* Move the menu down further from the top of the page */
+  top: 195px;  
   left: 0;
-  height: calc(100% - 90px);  /* Adjust the height to fill the remaining page, excluding the header */
+  height: calc(100% - 90px);  
   padding-top: 20px;
   text-align: center;
 }
@@ -42,7 +42,7 @@ h1 {
   padding: 12px;
   text-decoration: none;
   display: block;
-  margin-bottom: 10px;  /* Add some space between menu items */
+  margin-bottom: 10px;  
 }
 
 .vertical-menu a:hover {
