@@ -1,0 +1,106 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #004d00;  /* Green background for header */
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+header .logo {
+  width: 100px;  /* Adjust logo size */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+/* Vertical Menu */
+.vertical-menu {
+  width: 200px;
+  background-color: #333;
+  position: fixed;
+  top: 195px;  /* Move the menu down further from the top of the page */
+  left: 0;
+  height: calc(100% - 90px);  /* Adjust the height to fill the remaining page, excluding the header */
+  padding-top: 20px;
+  text-align: center;
+}
+
+.vertical-menu a {
+  color: white;
+  padding: 12px;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;  /* Add some space between menu items */
+}
+
+.vertical-menu a:hover {
+  background-color: #575757;
+}
+
+/* New Button Styling for Search and Download */
+.vertical-menu #searchBtn, 
+.vertical-menu #downloadBtn {
+  background-color: #4CAF50; /* Green background for buttons */
+  border-radius: 4px;
+}
+
+.vertical-menu #searchBtn:hover, 
+.vertical-menu #downloadBtn:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* Main Content Styling */
+.container {
+  margin-left: 220px;  /* Space for the vertical menu */
+  padding: 20px;
+  max-width: 600px;
+  margin-top: 20px;  /* Move the form down to match the menu */
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+form input, form select, form button {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+#message {
+  margin-top: 20px;
+  font-weight: bold;
+}

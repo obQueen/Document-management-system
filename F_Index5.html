@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenOil Document Management System</title>
+  <link rel="stylesheet" href="Fstyle.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <img src="GreenOil.jpg" class="logo">
+    <h1>GreenOil Document Management System</h1>
+  </header>
+
+  <!-- Vertical Menu -->
+  <nav class="vertical-menu">
+    <a href="FWork Instructions.html">Work Instructions</a> <!-- This links back to the Work Instruction page -->
+    <a href="FContact.HTML">Contact</a> <!-- This links to the Contact page -->
+        <a href="FSearch.HTML">Search</a> <!-- Link to the Search page -->
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    <form id="docForm">
+      <label for="projectCode">Project Code:</label>
+      <input type="text" id="projectCode" name="projectCode" required>
+
+      <label for="fileName">File Name/Description:</label>
+      <input type="text" id="fileName" name="fileName" required>
+
+      <label for="disciplineCode">Discipline Code:</label>
+      <select id="disciplineCode" name="disciplineCode" required>
+        <option value="" disabled selected>Select from drop-down list</option>
+        <option value="ENG">Engineering</option>
+        <option value="PRG">Project Management</option>
+        <option value="POG">Programme Management</option>
+        <option value="FIN">Finance</option>
+        <option value="HND">Handback</option>
+      </select>
+
+      <label for="documentType">Document Type:</label>
+      <select id="documentType" name="documentType" required>
+        <option value="" disabled selected>Select from drop-down list</option>
+        <option value="REM">Remit</option>
+        <option value="CON">Contract</option>
+        <option value="PRO">Procedure</option>
+        <option value="REP">Report</option>
+        <option value="DRG">Drawing</option>
+        <option value="PAY">Payment</option>
+        <option value="VAO">Variation Order</option>
+        <option value="PLN">Plan</option>
+      </select>
+
+      <label for="fileUpload">Upload File:</label>
+      <input type="file" id="fileUpload" name="fileUpload" required>
+
+      <button type="submit">Upload</button>
+    </form>
+
+    <div id="message"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
