@@ -1,4 +1,4 @@
-// Sample document data (replace with actual data or fetch from a server)
+// Sample document data 
 const documents = [
   { projectCode: "OP123456", disciplineCode: "ENG", documentType: "REP", fileName: "Engineering Report 1.pdf", fileUrl: "files/Engineering_Report_1.pdf" },
   { projectCode: "OP654321", disciplineCode: "PRG", documentType: "PLN", fileName: "Project Plan.pdf", fileUrl: "files/Project_Plan.pdf" },
@@ -6,7 +6,7 @@ const documents = [
   // Add more documents as needed
 ];
 
-// Handle the search form submission
+// Search form submission
 document.getElementById('searchForm').addEventListener('submit', function(e) {
   e.preventDefault();
 
